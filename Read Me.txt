@@ -1,0 +1,51 @@
+網頁進度-相關注意事項規範：
+
+01.CSS暫時先不要作程序優化跟程式碼優化的部分，如果有任何程式碼會動到舊有資料的話要先確認，不然就是挖別人的一次複製貼上(比較好回朔)
+
+02.index.html別寫除了設定檔、header及footer以外的程式，如有需要撰寫其他頁面的話直接複製一個index並重新命名
+
+03.目前header 與footer 兩個版皆為固定版，如果要修正這兩個部份的話請在index.html上處理
+
+04.由於html、css與js(目前沒有)檔內文轉外部文件顯示會有文不對行的問題，若有任何顯示上的問題僅能自行排版
+
+05.內容僅在index頁面上 71-74 上製作，別將內容以外的檔案寫在main以外的區域 (非常重要)
+
+        <main class="main">
+            <!--製版前記得把style刪除-->
+            <div class="content-wapper" style="height: 1000px;"></div>
+        </main>
+
+06.目前head長這樣，有需要使用的額外套件如bootstrap、webflow等套件要先確認是否css或js檔，避免整理上的麻煩與bug (非常重要)
+
+	<head>
+    		<meta charset="utf-8">
+    		<meta name="description" content="">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<meta name="format-detection" content="telephone=no">
+
+    		<title>鐘智瑋吉他#首頁</title>
+    		<!--其餘link-->
+    		<link rel="preconnect" href="https://fonts.googleapis.com">
+    		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    		<link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    		<!--CSS與JS !!!重要!!!別亂動-->
+   		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+7.css 1-55 目前為css設定 若有任一class以外要進行更改的部分記得放在上面(可放可不放，比較好找而已)
+
+8.css 57-63 部分有一個.site-wapper組件，如需做任何更動一定要先跟我說一聲!!!!!!!!! (非常重要)
+
+	/*-網頁全域設定結束-*/
+	.site-wapper{
+ 	width: 100%;
+  	min-height: 100%;
+ 	overflow: hidden;
+	}
+	/*-網頁全域設定結束-*/
+
+9.css 217-223 部分為內容區css程式撰寫處，同html部分，別將任何程式碼寫在footer區的位址(有先後順序的問題)
+
+10.現在html 10 部分有一個程式，有要做除首頁外的部分記得改 # 後面的名稱，避免撞名 (非常重要)
+
+	   <title>鐘智瑋吉他#首頁</title>
